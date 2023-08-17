@@ -1,0 +1,36 @@
+body {
+    background-image: url(../assets/bg-home.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home {
+    margin-top: 25rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 125%;
+    margin-bottom: 2.4rem;
+}
+
+button {
+    background: transparent;
+    border: 2px solid #FFF;
+    border-radius: 5px;
+    color: var(--button-text);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 1.2rem 3.2rem;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+button:hover,
+button:focus {
+    background: #FFF;
+    color: var(--button-text-hover);
+    cursor: pointer;
+}

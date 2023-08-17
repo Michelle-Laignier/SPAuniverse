@@ -1,0 +1,61 @@
+@import url(./home.css);
+@import url(./universo.css);
+@import url(./exploracao.css);
+
+:root {
+    font-size: 62.5%;
+
+    --button-text: #FFF;
+    --button-text-hover: #02799D;
+    --header-text: #C4C4CC;
+    --header-text-hover: #FFF;
+    --text: #E1E1E6;
+    --title: #E1E1E6;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    color: var(--text);
+}
+
+header {
+    align-items: center;
+    display: flex;
+    gap: 3.2rem;
+    margin: 4rem 0 4rem 7.2rem;
+}
+
+#logo {
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#logo:hover {
+    scale: 1.4;
+}
+
+nav {
+    display: flex;
+    gap: 5.3rem;
+}
+
+a {
+    color: var(--header-text);
+    font-size: 2.1rem;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+a:hover,
+a:focus {
+    color: var(--header-text-hover);
+    font-size: 2.4rem;
+    font-weight: 700;
+}

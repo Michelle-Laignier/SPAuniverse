@@ -1,0 +1,22 @@
+#exploracao {
+    background-image: url(../assets/bg-exploracao.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+}
+
+#exploracao-title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    margin: 18.5rem 0 1.6rem 10.2rem;
+}
+
+#exploracao-text {
+    font-size: 1.8rem;
+    line-height: 160%;
+    margin-left: 10.2rem;
+}
