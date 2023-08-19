@@ -1,32 +1,11 @@
-const routes = {
-    "/home": "/pages/home.html",
-    "/universo": "/pages/universo.html",
-    "/exploracao": "/pages/exploracao.html",
-}
+import { Router } from "./router.js"
 
-function route (event) {
-    event = event || window.event
-    event.preventDefault()
+const router = new Router()
+router.add("/home", "/pages/home.html")
+router.add("/universo", "/pages/universo.html",)
+router.add("/exploracao", "/pages/exploracao.html")
 
-    window.history.pushState({}, "", event.target.href)
-
-    handle()
-}
-
-function handle () {
-    const { pathname } = window.location
-    console.log(pathname);
-
-    const route = routes[pathname]
-    console.log(route);
-
-    const content = document.querySelector("#content")
-
-    fetch(route)
-    .then(data => data.text())
-    .then(html => content.innerHTML = html)
-}
-
-handle()
+router.handle()
 
 window.onpopstate = () => handle()
+window.route = () => router.route()

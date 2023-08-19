@@ -1,0 +1,75 @@
+@media screen and (max-width: 768px) {
+    body {
+        background-color: #071922;
+    }
+
+    header {
+        justify-content: center;
+        margin: 4rem 0 4rem 0;
+    }
+
+    #home {
+        background-image: url(../assets/bg-home-mobile.png);
+        background-position: center;
+        background-size: auto;
+    }
+
+    #universe {
+        background-image: url(../assets/bg-o-universo-mobile.png);
+        background-position: center;
+        background-size: auto;
+    }
+
+    #exploracao {
+        background-image: url(../assets/bg-exploracao-mobile.png);
+        background-position: center;
+        background-size: auto;
+    }
+
+
+    #universe-title,
+    #exploracao-title {
+        margin: 18.5rem 0 1.6rem 0;
+        text-align: center;
+    }
+
+    #universe-text,
+    #exploracao-text {
+        margin-left: 0;
+        margin: 0 4rem;
+        text-align: center;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        gap:2.2rem
+    }
+
+    nav {
+        gap: 3.3rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header nav a {
+        font-size: 1.8rem;
+    }
+
+    a:hover,
+    a:focus {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header nav a {
+        font-size: 1.4rem;
+    }
+
+    a:hover,
+    a:focus {
+        font-size: 1.5rem;
+    }
+}
